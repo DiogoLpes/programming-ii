@@ -9,15 +9,16 @@ try {
     const headers = rows[0].split(','); // ["name", "email", "age"]
     const data = rows.slice(1).map(row => {
     const values = row.split(',');
-    if (isNaN(Age)) {
-        console.log("Invalid user age"); 
-    
-        return {
-            name: values[0],
-            email: values[1],
-            age: parseInt(values[2])
-        };
+    let age = parseInt(values[2]);
+
+    if (isNaN(age)) {
+        return null;
     }
+    return {
+        name: values[0],
+        email: values[1],
+        age: parseInt(values[2])
+    };
     });
     fs.writeFileSync('output.json', JSON.stringify(data, null, 2));
 } catch (error) {
