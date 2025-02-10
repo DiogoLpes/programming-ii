@@ -3,19 +3,14 @@ const nested = {
     b: { c: 2, d: { e: 3 } },  
     f: [4, 5]  
   };  
-
-
-
-
-
-
-  function traverse(obj, path) {  
-    for (const key in obj) {  
-      traverse.groupBy(obj => key);
-
-    }  
-    return path
-  }  
   
-
+  function flattening(obj, path = []) {  
+    if (typeof obj !== 'object') {  
+      console.log(path.join('/'), ':', obj);  
+      return;  
+    }  
+    for (const key in obj) {  
+      flattening(obj[key], [...path, key]);  
+    }  
+  }  
   console.log(nested);  
