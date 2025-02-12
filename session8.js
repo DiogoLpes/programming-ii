@@ -6,16 +6,11 @@ const items = [
   
 const capacity = 7;
 
+function knapsack (items, capacity) {
+  return sumweight = items.reduce((capacity, item) => {
+      if (capacity + item.weight >= capacity) {
+      };
+}, 0);
+} 
 
-
-function sumweight(items, capacity) {
-    for(let i = 0; i < items.lenght; i++ ){
-        for(let j = 0; j < items.lenght; j++ ){
-            if(items.weight + items.weight === capacity) {
-            }
-        }
-    }
-}
-
-console.log(sumweight(items, capacity));
-
+console.log(knapsack);
