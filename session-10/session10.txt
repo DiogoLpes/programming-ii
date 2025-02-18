@@ -1,0 +1,31 @@
+### 3. Exercise:
+
+Predict and explain in a text file the outputs/errors of the code above.
+
+console.log(hoistedVar); // Output: undefined
+var hoistedVar = "I'm hoisted!";
+
+
+hoistedFunc(); // Output: "I work!"
+function hoistedFunc() {
+  console.log("I work!");
+}
+
+R:. O programa lê primeiro as Var e as Functions e guarda na memoria como `undefined`, funcionando assim o processo de Hoisting.
+Se eu no exemplo acima trocar a palavra-chave por um "const" ou um "let" irá acorrer um erro pois elas so funcionam dentro do escopo.
+
+
+----------------//------------------------------------
+
+
+R:. Hoisting não funciona em arrow functions, 
+variáveis declaradas como a var encontram-se no topo do seu escopo de execução (hoisting)
+Para a resolucao de exemplo abaixo teriamos de chamar a funcao no fim.
+
+notHoistedFunc(); 
+var notHoistedFunc = () => console.log("I won't work");
+
+
+**Challenge: (Optional)**
+Rewrite the code using let/const and explain the differences.
+
