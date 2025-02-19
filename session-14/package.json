@@ -1,0 +1,18 @@
+{
+  "name": "session-14",
+  "version": "0.1.0",
+  "description": "Exercise: Math Utility Module",
+  "main": "index  .js",
+  "scripts": {
+    "math": "node index.js"
+  },
+  "type":"module",
+  "keywords": [
+    "tool"
+  ],
+  "author": "Diogo Lopes",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
