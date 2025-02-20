@@ -1,0 +1,13 @@
+{
+  "name": "streamprog",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module",
+  "author": "Diogo Lopes",
+  "license": "ISC",
+  "description": ""
+}
+
