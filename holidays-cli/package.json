@@ -1,0 +1,17 @@
+{
+  "name": "Holidays-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "author": "Diogo Lopes",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2"
+  }
+}
